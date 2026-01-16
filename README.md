@@ -112,6 +112,74 @@ Uygulama varsayılan olarak:
 http://localhost:4200
 ```
 
+
+## Proje Yapısı (Backend)
+
+``
+
+RealEstateCRM
+├── RealEstateCRM.API
+│   ├── Controllers
+│   │   ├── AuthController.cs
+│   │   ├── CustomerController.cs
+│   │   └── PropertyController.cs
+│   ├── Program.cs
+│   ├── appsettings.json
+│   └── Middleware
+│       └── ExceptionMiddleware.cs
+│
+├── RealEstateCRM.Application
+│   ├── Features
+│   │   ├── Auth
+│   │   │   ├── Commands
+│   │   │   └── Queries
+│   │   ├── Customers
+│   │   │   ├── Commands
+│   │   │   └── Queries
+│   │   └── Properties
+│   │       ├── Commands
+│   │       └── Queries
+│   │
+│   ├── DTOs
+│   ├── Interfaces
+│   │   ├── Repositories
+│   │   └── Services
+│   ├── Behaviors
+│   │   └── ValidationBehavior.cs
+│   └── Mappings
+│       └── AutoMapperProfile.cs
+│
+├── RealEstateCRM.Domain
+│   ├── Entities
+│   │   ├── Customer.cs
+│   │   ├── Property.cs
+│   │   └── User.cs
+│   ├── Enums
+│   ├── ValueObjects
+│   └── Common
+│       └── BaseEntity.cs
+│
+├── RealEstateCRM.Persistence
+│   ├── Context
+│   │   └── RealEstateDbContext.cs
+│   ├── Configurations
+│   │   └── CustomerConfiguration.cs
+│   ├── Repositories
+│   └── Migrations
+│
+├── RealEstateCRM.Infrastructure
+│   ├── Services
+│   │   ├── EmailService.cs
+│   │   └── TokenService.cs
+│   ├── Security
+│   │   └── JwtSettings.cs
+│   └── Logging
+│       └── SerilogConfig.cs
+│
+└── RealEstateCRM.sln
+
+``
+
 ### Backend
 
 ```bash

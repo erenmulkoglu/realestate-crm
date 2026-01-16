@@ -149,6 +149,7 @@ Tüm tablolar, formlar ve toolbar bileşenleri **mobil uyumlu** olacak şekilde 
 ## Geliştirici
 
 **Eren Mülkoğlu - Senior Software Engineer**
+
 Full Stack .NET & Angular Developer
 
 ---
